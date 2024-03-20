@@ -6,6 +6,10 @@ Check posibilities that Data API builder has to offer.
 ### It it possible to run API builder solution within Static Web App?
 Yes / No ?
 
+### Azure Static Web Apps + Data API builder
+- [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/database-overview)
+- [SWA + DAB](https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-sql?tabs=bash&pivots=static-web-apps-rest)
+
 ### Links
 - [Main Page](https://learn.microsoft.com/en-us/azure/data-api-builder/)
 - [Install DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-with-data-api-builder)
