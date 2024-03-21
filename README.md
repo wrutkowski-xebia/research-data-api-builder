@@ -15,3 +15,7 @@ Yes / No ?
 - [Install DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-with-data-api-builder)
 - [Azure SQL Quickstart](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-azure-sql)
 - [DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/data-api-builder-cli)
+
+
+### Issues
+- DAB static port 5000 on localhost
