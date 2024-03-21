@@ -18,4 +18,4 @@ Yes / No ?
 
 
 ### Issues
-- DAB static port 5000 on localhost
+- [DAB static port 5000 on localhost](https://github.com/Azure/data-api-builder/issues/1477)
