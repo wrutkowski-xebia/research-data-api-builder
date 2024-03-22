@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "identityapp1": {
+      "connectionInfo": "App registration: research-data-api-builder-appreg, Tenant: PGS Software | Now Xebia (pgs-soft.com - Microsoft Entra ID)",
+      "type": "identityapp.default"
+    }
+  }
+}
