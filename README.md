@@ -2,7 +2,7 @@
 ![DAB](/img/dab.png)
 
 ### Research of Data API builder
-Check posibilities that Data API builder has to offer.
+Check possibilities that Data API builder has to offer.
 
 ### It it possible to run API builder solution within Static Web App?
 Yes / No ?
@@ -17,6 +17,10 @@ Yes / No ?
 - [Azure SQL Quickstart](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-azure-sql)
 - [DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/data-api-builder-cli)
 
+
+### Some maybe not obvious/common topics
+- Data API builder is hosted at static part of url: `www.site.com` +  **/data-api** + `/rest`
+- custom path to DAB config need to be specified in Git Workflow at: data_api_location
 
 ### Issues
 - [DAB CLI static port 5000 on localhost](https://github.com/Azure/data-api-builder/issues/1477)
