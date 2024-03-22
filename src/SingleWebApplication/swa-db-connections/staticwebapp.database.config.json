@@ -20,24 +20,30 @@
     },
     "host": {
       "cors": {
-        "origins": [ ],
+        "origins": [],
         "allow-credentials": false
       },
       "authentication": {
         "provider": "StaticWebApps"
       },
       "mode": "development"
-    }
-  },
-  "entities": {
-    "Customer": {
-      "source": "SalesLT.Customer",
-      "permissions": [
-        {
-          "actions": [ "*" ],
-          "role": "anonymous"
-        }
-      ]
+    },
+    "telemetry": {
+      "application-insights": {
+        "enabled": true,
+        "connection-string": "InstrumentationKey=884e5459-cfa3-496c-8881-ed96885d24e9;IngestionEndpoint=https://polandcentral-0.in.applicationinsights.azure.com/;LiveEndpoint=https://polandcentral.livediagnostics.monitor.azure.com/"
+      }
+    },
+    "entities": {
+      "Customer": {
+        "source": "SalesLT.Customer",
+        "permissions": [
+          {
+            "actions": [ "*" ],
+            "role": "anonymous"
+          }
+        ]
+      }
     }
   }
 }
