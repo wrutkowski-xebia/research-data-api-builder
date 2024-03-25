@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Http;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 
@@ -13,7 +14,7 @@ namespace SingleWebApplication.API
         }
 
         [Function(nameof(Function1))]
-        public void Run()
+        public void Run([HttpTrigger(AuthorizationLevel.Anonymous)] HttpRequest req)
         {
             _logger.LogInformation(nameof(Function1));
         }
