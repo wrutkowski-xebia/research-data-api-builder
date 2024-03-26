@@ -9,6 +9,9 @@ Yes / No ?
 
 - For deployed together with and on Static Web App, I would say NO for production use because of: cold start, Application Insights problems and at the moment of writing there are 322 open issues on MS DAB GitHub project.
 
+### How about configuration Static Web App + DAB Docker Container?
+
+
 ### Azure Static Web Apps + Data API builder
 - [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/database-overview)
 - [SWA + DAB](https://learn.microsoft.com/en-us/azure/static-web-apps/database-azure-sql?tabs=bash&pivots=static-web-apps-rest)
