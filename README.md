@@ -14,7 +14,7 @@ Yes / No ?
 ### Links
 - [Main Page](https://learn.microsoft.com/en-us/azure/data-api-builder/)
 - [Install DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-with-data-api-builder)
-- [Azure SQL Quickstart](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-azure-sql)
+- [Azure SQL Quick Start](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-azure-sql)
 - [DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/data-api-builder-cli)
 
 
