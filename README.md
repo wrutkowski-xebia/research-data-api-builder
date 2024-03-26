@@ -19,7 +19,7 @@ Yes / No ?
 
 
 ### Some maybe not obvious/common topics
-- Data API builder is hosted at static part of url: `www.site.com` +  ==/data-api== + `/rest`
+- Data API builder is hosted at static part of url: `www.site.com` +  **/data-api** + `/rest`
 - custom path to DAB config need to be specified in Git Workflow at: data_api_location
 
 ### Issues
