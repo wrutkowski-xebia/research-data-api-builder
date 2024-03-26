@@ -19,7 +19,7 @@ Yes / No ?
 
 
 ### Some maybe not obvious/common topics
-- Data API builder is hosted at static part of url: `www.site.com` +  **/data-api** + `/rest`
+- Data API builder is hosted at static part of url: `www.site.com` +  ==/data-api== + `/rest`
 - custom path to DAB config need to be specified in Git Workflow at: data_api_location
 
 ### Issues
@@ -27,3 +27,5 @@ Yes / No ?
 Option to run it by Docker with custom port: 
 `docker run -it --rm -v "%cd%\swa-db-connections:/App/swa-db-connections" -p 5033:5000 --env DATABASE_CONNECTION_STRING="%DATABASE_CONNECTION_STRING%" mcr.microsoft.com/azure-databases/data-api-builder:0.10.21 --ConfigFileName ./swa-db-connections/staticwebapp.database.config.json`
 - [Application Insights currently working only on localhost](https://github.com/Azure/data-api-builder/issues/1735)
+- On "cold start" there is some error:
+*Message":"Response status code does not indicate success: 400 (Bad Request).*
