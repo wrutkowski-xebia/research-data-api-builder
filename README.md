@@ -10,6 +10,9 @@ Yes / No ?
 - For deployed together with and on Static Web App, I would say NO for production use because of: cold start, Application Insights problems and at the moment of writing there are 322 open issues on MS DAB GitHub project.
 
 ### How about configuration Static Web App + DAB Docker Container?
+- SWA CLI local + DAB Docker Container
+- SWA CLI Docker Container (integrated DAB)
+- SWA CLI Docker Container (only app) + DAB Docker Container ?
 
 
 ### Azure Static Web Apps + Data API builder
