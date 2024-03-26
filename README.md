@@ -27,5 +27,5 @@ Yes / No ?
 Option to run it by Docker with custom port: 
 `docker run -it --rm -v "%cd%\swa-db-connections:/App/swa-db-connections" -p 5033:5000 --env DATABASE_CONNECTION_STRING="%DATABASE_CONNECTION_STRING%" mcr.microsoft.com/azure-databases/data-api-builder:0.10.21 --ConfigFileName ./swa-db-connections/staticwebapp.database.config.json`
 - [Application Insights currently working only on localhost](https://github.com/Azure/data-api-builder/issues/1735)
-- On "cold start" there is some error:
-*Message":"Response status code does not indicate success: 400 (Bad Request).*
+- ["Cold Start" problems, giving 400 error on few first requests](https://github.com/Azure/data-api-builder/issues/918)
+
