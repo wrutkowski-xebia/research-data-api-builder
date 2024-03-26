@@ -24,7 +24,7 @@ Yes / No ?
 - [Install DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-with-data-api-builder)
 - [Azure SQL Quick Start](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-azure-sql)
 - [DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/data-api-builder-cli)
-
+- [SWA CLI Docker](https://azure.github.io/static-web-apps-cli/docs/cli/docker)
 
 ### Some maybe not obvious/common topics
 - Data API builder is hosted at static part of url: `www.site.com` +  **/data-api** + `/rest`
