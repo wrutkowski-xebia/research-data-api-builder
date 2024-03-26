@@ -5,7 +5,9 @@
 Check possibilities that Data API builder has to offer.
 
 ### It it possible to run API builder solution within Static Web App?
-Yes / No ?
+Yes / No ?  
+
+- For deployed together with and on Static Web App, I would say NO for production use because of: cold start, Application Insights problems and at the moment of writing there are 322 open issues on MS DAB GitHub project.
 
 ### Azure Static Web Apps + Data API builder
 - [Overview](https://learn.microsoft.com/en-us/azure/static-web-apps/database-overview)
@@ -21,6 +23,7 @@ Yes / No ?
 ### Some maybe not obvious/common topics
 - Data API builder is hosted at static part of url: `www.site.com` +  **/data-api** + `/rest`
 - custom path to DAB config need to be specified in Git Workflow at: data_api_location
+- [OpenAPI definitions at `<url>/rest` + **/openapi**](https://learn.microsoft.com/en-us/azure/data-api-builder/openapi)  
 
 ### Issues
 - [DAB CLI static port 5000 on localhost](https://github.com/Azure/data-api-builder/issues/1477)
