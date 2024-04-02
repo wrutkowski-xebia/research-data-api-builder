@@ -1,0 +1,10 @@
+version: '3.8'
+
+#https://docs.docker.com/compose/compose-file/compose-file-v3/#compose-and-docker-compatibility-matrix
+
+services:
+  singlewebapplication.api:
+    image: ${DOCKER_REGISTRY-}singlewebapplicationapi
+    build:
+      context: .
+      dockerfile: SingleWebApplication.API/Dockerfile
