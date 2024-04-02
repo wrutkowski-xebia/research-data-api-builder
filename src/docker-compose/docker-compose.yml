@@ -7,4 +7,4 @@ services:
     image: ${DOCKER_REGISTRY-}singlewebapplicationapi
     build:
       context: .
-      dockerfile: SingleWebApplication.API/Dockerfile
+      dockerfile: ../SingleWebApplication.API/Dockerfile
