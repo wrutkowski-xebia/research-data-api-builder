@@ -1,6 +1,6 @@
 #See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/azure-functions/dotnet-isolated:4-dotnet-isolated8.0 AS base
+FROM mcr.microsoft.com/azure-functions/dotnet-isolated:4.31.1-dotnet-isolated8.0 AS base
 WORKDIR /home/site/wwwroot
 EXPOSE 8080
 
