@@ -4,3 +4,6 @@ FROM swacli/static-web-apps-cli:1.1.7 AS base
 WORKDIR /home/site/wwwroot
 EXPOSE 4280
 
+COPY . .
+
+CMD ["swa", "start"]

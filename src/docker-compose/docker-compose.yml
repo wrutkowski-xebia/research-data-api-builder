@@ -8,6 +8,11 @@ services:
     build:
       context: .
       dockerfile: ../SingleWebApplication.API/Dockerfile
+  singlewebapplication.dataapibuilder:
+    image: ${DOCKER_REGISTRY-}singlewebapplicationdataapibuilder
+    build:
+      context: .
+      dockerfile: ../SingleWebApplication/Dockerfile.DataApiBuilder
   singlewebapplication:
     image: ${DOCKER_REGISTRY-}singlewebapplication
     build:

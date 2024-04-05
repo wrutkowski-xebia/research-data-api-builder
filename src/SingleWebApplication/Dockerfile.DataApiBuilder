@@ -1,0 +1,17 @@
+#See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+
+FROM mcr.microsoft.com/azure-databases/data-api-builder:0.10.21 AS base
+
+EXPOSE 5033
+
+ARG DABCONFIGFILENAME=staticwebapp.database.config
+
+COPY ./swa-db-connections/$DABCONFIGFILENAME ./App/swa-db-connections/$DABCONFIGFILENAME
+
+###
+#base image use ENTRYPOINT that can be used by CMD
+#https://github.com/Azure/data-api-builder/blob/main/Dockerfile
+#ENTRYPOINT ["dotnet", "Azure.DataApiBuilder.Service.dll"]
+###
+
+CMD ["--ConfigFileName" "./swa-db-connections/$DABCONFIGFILENAME"]
