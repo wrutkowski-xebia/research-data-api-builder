@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" modified="2024-04-05T08:29:34.803Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="4ruM444SuU38CvcSWyzJ" version="24.2.2" type="device">
+  <diagram name="Page-1" id="JW4wQgGCv-FUl63rrOrH">
+    <mxGraphModel dx="2924" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BXBd8-tKlisG6qyAHsOw-7" target="f9g9lOPVKrhHtXXRZV_R-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BXBd8-tKlisG6qyAHsOw-7" value="SWA - Blazor WASM&lt;br&gt;&lt;br&gt;+ DAB together" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/preview/Static_Apps.svg;" parent="1" vertex="1">
+          <mxGeometry x="10" y="50.75" width="70" height="56.00000000000001" as="geometry" />
+        </mxCell>
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-4" target="f9g9lOPVKrhHtXXRZV_R-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-4" value="Editor" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.visual_studio_online;" parent="1" vertex="1">
+          <mxGeometry x="-310" y="60" width="50" height="37.5" as="geometry" />
+        </mxCell>
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-5" target="f9g9lOPVKrhHtXXRZV_R-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-5" value="Repository" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.git_repository;" parent="1" vertex="1">
+          <mxGeometry x="-200" y="53.75" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-7" target="BXBd8-tKlisG6qyAHsOw-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-7" value="Pipeline" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Azure_Pipelines.svg;" parent="1" vertex="1">
+          <mxGeometry x="-90" y="53.75" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="f9g9lOPVKrhHtXXRZV_R-11" value="WWW" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.web_browser;" parent="1" vertex="1">
+          <mxGeometry x="140" y="61" width="50" height="35.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
