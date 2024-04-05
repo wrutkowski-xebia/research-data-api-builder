@@ -43,3 +43,7 @@ Option to run it by Docker with custom port:
 Deploying also with API, allows to turn on Insights setting on Azure, but that don't make Insights to log calls from DAB. Even if that setting is OFF, calls from localhost are logged.
 - ["Cold Start" problems, giving 400 error on few first requests](https://github.com/Azure/data-api-builder/issues/918)
 
+### More about using containers for DAB
+- [Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-update#limitations) - lack of later update capabilities of already running container (ex. same IP address not guarantee). Seems that later maintenance could be problematic when deploying this way. Instances service looks like more to be used as one-off scenario.
+- Azure Container Apps or App Service should be better choice for long term use.
+
