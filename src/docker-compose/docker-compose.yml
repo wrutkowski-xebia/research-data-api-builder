@@ -2,19 +2,30 @@ version: '3.8'
 
 #https://docs.docker.com/compose/compose-file/compose-file-v3/#compose-and-docker-compatibility-matrix
 
-services:
+services: 
   singlewebapplication.api:
     image: ${DOCKER_REGISTRY-}singlewebapplicationapi
     build:
       context: .
       dockerfile: ../SingleWebApplication.API/Dockerfile
-  singlewebapplication.dataapibuilder:
-    image: ${DOCKER_REGISTRY-}singlewebapplicationdataapibuilder
+  singlewebapplication.dataapibuilder:  
+    image: ${DOCKER_REGISTRY-}singlewebapplicationdataapibuilder    
     build:
       context: .
-      dockerfile: ../SingleWebApplication/Dockerfile.DataApiBuilder
+      dockerfile: ../SingleWebApplication/Dockerfile.DataApiBuilder            
+    environment:     
+      - DAB_CONFIG_FILE_NAME=staticwebapp.database.config.json
+      - DATABASE_CONNECTION_STRING= /run/secrets/database_connection_string
+    secrets:
+      - database_connection_string
+    ports:
+      - 5033:5000       
   singlewebapplication:
     image: ${DOCKER_REGISTRY-}singlewebapplication
     build:
       context: .
       dockerfile: ../SingleWebApplication/Dockerfile
+
+secrets: 
+  database_connection_string:
+    environment: "DATABASE_CONNECTION_STRING"

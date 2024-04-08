@@ -2,16 +2,12 @@
 
 FROM mcr.microsoft.com/azure-databases/data-api-builder:0.10.21 AS base
 
-EXPOSE 5033
+COPY /swa-db-connections/${DAB_CONFIG_FILE_NAME} /App/swa-db-connections/dab.config.json
 
-ARG DABCONFIGFILENAME=staticwebapp.database.config
-
-COPY ./swa-db-connections/$DABCONFIGFILENAME ./App/swa-db-connections/$DABCONFIGFILENAME
-
-###
-#base image use ENTRYPOINT that can be used by CMD
+######################################################################
+#base image use ENTRYPOINT that can be used by CMD and /App is WORKDIR
 #https://github.com/Azure/data-api-builder/blob/main/Dockerfile
 #ENTRYPOINT ["dotnet", "Azure.DataApiBuilder.Service.dll"]
-###
+######################################################################
 
-CMD ["--ConfigFileName" "./swa-db-connections/$DABCONFIGFILENAME"]
+CMD ["--ConfigFileName", "./swa-db-connections/dab.config.json"]
