@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleWebApplication", "Sin
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleWebApplication.API", "SingleWebApplication.API\SingleWebApplication.API.csproj", "{0C7FB9F3-4261-4730-8238-3F0BFA0A91D3}"
 EndProject
-Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose\docker-compose.dcproj", "{16C8B917-69BA-4834-AEAF-805A31652A83}"
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{16C8B917-69BA-4834-AEAF-805A31652A83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -2,7 +2,9 @@
 
 FROM mcr.microsoft.com/azure-databases/data-api-builder:0.10.21 AS base
 
-COPY /swa-db-connections/${DAB_CONFIG_FILE_NAME} /App/swa-db-connections/dab.config.json
+ARG DAB_CONFIG
+
+COPY ${DAB_CONFIG} /App/swa-db-connections/dab.config.json
 
 ######################################################################
 #base image use ENTRYPOINT that can be used by CMD and /App is WORKDIR
