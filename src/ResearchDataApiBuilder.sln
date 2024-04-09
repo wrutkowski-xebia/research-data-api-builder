@@ -9,6 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleWebApplication.API", 
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{16C8B917-69BA-4834-AEAF-805A31652A83}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingleWebApplication.DataAPIBuilder", "SingleWebApplication.DataAPIBuilder", "{3727735F-E36B-4354-A899-FF67B4A4AE8C}"
+	ProjectSection(SolutionItems) = preProject
+		SingleWebApplication.DataAPIBuilder\Dockerfile = SingleWebApplication.DataAPIBuilder\Dockerfile
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

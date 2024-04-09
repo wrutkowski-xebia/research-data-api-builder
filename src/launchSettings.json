@@ -4,8 +4,11 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "singlewebapplication.api": "StartDebugging"
-      }
+        "singlewebapplication.api": "DoNotStart",
+        "singlewebapplication": "StartWithoutDebugging", 
+        "singlewebapplication.dataapibuilder": "StartWithoutDebugging"
+      }      
     }
+    
   }
 }

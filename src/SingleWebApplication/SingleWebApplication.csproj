@@ -7,6 +7,7 @@
     <UserSecretsId>7c1671b3-fcc3-48cc-9c3d-b9c6139e5e0b</UserSecretsId>
     <DockerFastModeProjectMountDirectory>/home/site/wwwroot</DockerFastModeProjectMountDirectory>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
   </PropertyGroup>
 
   <ItemGroup>
