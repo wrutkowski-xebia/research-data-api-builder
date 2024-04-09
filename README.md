@@ -1,7 +1,7 @@
 ![DAB](/img/dab.png)
 
 # Updates
-- March 2024: checking DAB version 0.10.*
+- March 2024 [^1]: checking DAB version 0.10.*
 
 ---
 
@@ -48,8 +48,4 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 - Azure Container Apps or App Service should be better choice for long term use.
 
 ### Local system setup
-- Windows 10
-- Visual Studio 2022
-- Docker Desktop 4.28.0
-- WSL
-- Ubuntu 20.04 (WSL) (there were some issues with 22.04)
+- [^1]: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04)
