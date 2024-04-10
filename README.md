@@ -51,7 +51,7 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 ### Secrets with Visual Studio 2022 + Containers + Azure Cloud
 
 |[type](https://docs.docker.com/compose/compose-file/09-secrets/)| VS | Docker | Azure Container Apps |
-|-|-||-|-|
+|-|-|-|-|
 |environment|don't support swarm|in swarm mode|environment secrets|
 |file|don't support swarm|in swarm mode|secrets mount as volume|
 |CLI docker secret|don't support swarm|in swarm mode|n/a? not swarm mode?|
