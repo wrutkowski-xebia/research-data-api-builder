@@ -48,4 +48,15 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 - Azure Container Apps or App Service should be better choice for long term use.
 
 
+### Secrets with Visual Studio 2022 + Containers + Azure Cloud
+
+|[type](https://docs.docker.com/compose/compose-file/09-secrets/)| VS | Docker | Azure Container Apps |
+|-||-|-|
+|environment|don't support swarm|in swarm mode|environment secrets|
+|file|don't support swarm|in swarm mode|secrets mount as volume|
+|CLI docker secret|don't support swarm|in swarm mode|n/a? not swarm mode?|
+
+Data API Builder uses `@env("env_name")` in configuration files and ex. connection string seems to be stored as environment variable. Where in Azure there seems no problem to store it as a secret, there could be issue on local development, because Docker needs swarm mode and VS out of the box support only Docker Compose. For local dev seems storing connection string in local env seems not best but solution. 
+Seems in Azure build-in solution is working like equivalent for `/run/secrets/<name>` in pure docker.
+
 [^1]: Local setup: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04)
