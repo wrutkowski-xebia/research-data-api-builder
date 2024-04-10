@@ -29,7 +29,7 @@ Yes / No ?
 - [Azure SQL Quick Start](https://learn.microsoft.com/en-us/azure/data-api-builder/get-started/get-started-azure-sql)
 - [DAB CLI](https://learn.microsoft.com/en-us/azure/data-api-builder/data-api-builder-cli)
 - [SWA CLI Docker](https://azure.github.io/static-web-apps-cli/docs/cli/docker)
-- [DAB Docker Hub](https://hub.docker.com/_/microsoft-azure-databases-data-api-builder)
+- [DAB Docker Hub](https://hub.docker.com/_/microsoft-azure-databases-data-api-builder) - [Verified?](https://github.com/Azure/data-api-builder/discussions/2158)
 
 ### Some maybe not obvious/common topics
 - Data API builder is hosted at static part of url: `www.site.com` +  **/data-api** + `/rest`
