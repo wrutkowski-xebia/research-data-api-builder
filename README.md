@@ -44,6 +44,7 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 - ["Cold Start" problems, giving 400 error on few first requests](https://github.com/Azure/data-api-builder/issues/918)
 
 ### More about using containers for DAB
+- **No one way do do it right.**
 - [Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-update#limitations) - lack of later update capabilities of already running container (ex. same IP address not guarantee). Seems that later maintenance could be problematic when deploying this way. Instances service looks like more to be used as one-off scenario.
 - Azure Container Apps or App Service should be better choice for long term use.
 
