@@ -26,6 +26,8 @@ jobs:
           containerAppName: research-data-api-builder-dab
           resourceGroup: research-data-api-builder
           imageToBuild: defaultwrutkowski.azurecr.io/research-data-api-builder-dab:${{ github.sha }}
+          buildArguments: |
+            "DAB_CONFIG=${{ vars.DAB_CONFIG }}" 
           
             
 
