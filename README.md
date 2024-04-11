@@ -50,6 +50,8 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 - [Azure Container Instances](https://learn.microsoft.com/en-us/azure/container-instances/container-instances-update#limitations) - lack of later update capabilities of already running container (ex. same IP address not guarantee). Seems that later maintenance could be problematic when deploying this way. Instances service looks like more to be used as one-off scenario.
 - Azure Container Apps or App Service should be better choice for long term use.
 - Azure Container Apps offer to much, for this scenario needs, and on the other hand Azure Container Instances don't have everything needed.
+- Maybe even better would be App Service.
+- [Many deployment options of image.](https://learn.microsoft.com/en-us/azure/container-apps/code-to-cloud-options)
 
 
 ### Secrets with Visual Studio 2022 + Containers + Azure Cloud
