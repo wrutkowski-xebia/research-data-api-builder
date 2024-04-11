@@ -1,16 +1,6 @@
-name: Trigger auto deployment for research-data-api-builder-dab
+name: Data API Builder, Docker Image to Container Apps
 
-# When this action will be executed
-on:
-  # Automatically trigger it when detected changes in repo
-  push:
-    branches: 
-      [ main ]
-    paths:
-    - 'src/SingleWebApplication.DataAPIBuilder/**'
-    - '.github/workflows/research-data-api-builder-dab-AutoDeployTrigger-eb86dec0-9f7b-46d9-9845-8da47857865a.yml'
-
-  # Allow manual trigger 
+on:  
   workflow_dispatch:
       
 jobs:
