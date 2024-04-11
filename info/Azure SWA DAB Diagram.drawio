@@ -1,10 +1,13 @@
-<mxfile host="app.diagrams.net" modified="2024-04-05T09:14:30.001Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="HzsfZhodPVyXjw0yjnCj" version="24.2.2" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-11T08:50:37.968Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="BlRCIhToN5kXRYEGoUhj" version="24.2.3" type="device">
   <diagram name="Page-1" id="JW4wQgGCv-FUl63rrOrH">
-    <mxGraphModel dx="2924" dy="1106" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2859" dy="2206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BXBd8-tKlisG6qyAHsOw-7" target="f9g9lOPVKrhHtXXRZV_R-11" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="osyoQA1SdhFgGcTqCfIO-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BXBd8-tKlisG6qyAHsOw-7" target="osyoQA1SdhFgGcTqCfIO-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BXBd8-tKlisG6qyAHsOw-7" value="SWA - Blazor WASM&lt;br&gt;+ DAB together" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/preview/Static_Apps.svg;" parent="1" vertex="1">
@@ -30,6 +33,9 @@
         </mxCell>
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-11" value="WWW" style="sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;fillColor=#434445;aspect=fixed;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;align=center;outlineConnect=0;shape=mxgraph.vvd.web_browser;" parent="1" vertex="1">
           <mxGeometry x="140" y="61" width="50" height="35.5" as="geometry" />
+        </mxCell>
+        <mxCell id="osyoQA1SdhFgGcTqCfIO-1" value="Azure SQL" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="21" y="-64" width="48" height="64" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

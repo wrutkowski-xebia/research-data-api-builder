@@ -1,19 +1,19 @@
-<mxfile host="app.diagrams.net" modified="2024-04-11T08:45:36.939Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="T30PfzORgWcRhtgsLWXY" version="24.2.2" type="device">
+<mxfile host="app.diagrams.net" modified="2024-04-11T08:49:53.452Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" etag="T3_vBnzExQ_D8KHHAt9i" version="24.2.3" type="device">
   <diagram name="Page-1" id="JW4wQgGCv-FUl63rrOrH">
-    <mxGraphModel dx="1185" dy="1732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2009" dy="2206" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-45" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=4;" parent="1" vertex="1">
           <mxGeometry x="267" y="-163" width="393" height="326" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BXBd8-tKlisG6qyAHsOw-2" target="MvGjC8aVfzUmuZ-at9Ks-16">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BXBd8-tKlisG6qyAHsOw-2" target="MvGjC8aVfzUmuZ-at9Ks-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BXBd8-tKlisG6qyAHsOw-2" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;Azure Registries&lt;/font&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/containers/Container_Registries.svg;" parent="1" vertex="1">
           <mxGeometry x="702" y="281" width="68" height="61" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="BXBd8-tKlisG6qyAHsOw-9" target="f9g9lOPVKrhHtXXRZV_R-36">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-31" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="BXBd8-tKlisG6qyAHsOw-9" target="f9g9lOPVKrhHtXXRZV_R-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BXBd8-tKlisG6qyAHsOw-9" value="SWA - Blazor WASM" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/preview/Static_Apps.svg;" parent="1" vertex="1">
@@ -31,7 +31,7 @@
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-25" value="HOST&lt;br&gt;SWA - Blazor WASM&lt;br&gt;without DAB" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/preview/Static_Apps.svg;" parent="1" vertex="1">
           <mxGeometry x="300" y="506" width="70" height="56.00000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="f9g9lOPVKrhHtXXRZV_R-26" target="BXBd8-tKlisG6qyAHsOw-2">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-26" target="BXBd8-tKlisG6qyAHsOw-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-26" value="Image DAB" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/unicons-line-vol-3/24/docker-128.png" parent="1" vertex="1">
@@ -40,7 +40,7 @@
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-29" target="f9g9lOPVKrhHtXXRZV_R-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="f9g9lOPVKrhHtXXRZV_R-29" target="MvGjC8aVfzUmuZ-at9Ks-4">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-29" target="MvGjC8aVfzUmuZ-at9Ks-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-29" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.git_repository;" parent="1" vertex="1">
@@ -64,28 +64,34 @@
         <mxCell id="f9g9lOPVKrhHtXXRZV_R-53" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/nuvola2/48x48/actions/project_open.png" parent="1" vertex="1">
           <mxGeometry x="300" y="-80" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MvGjC8aVfzUmuZ-at9Ks-4" target="f9g9lOPVKrhHtXXRZV_R-26">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="MvGjC8aVfzUmuZ-at9Ks-4" target="f9g9lOPVKrhHtXXRZV_R-26" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-4" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Azure_Pipelines.svg;" vertex="1" parent="1">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-4" value="" style="image;sketch=0;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/mscae/Azure_Pipelines.svg;" parent="1" vertex="1">
           <mxGeometry x="444" y="286.5" width="50" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="f9g9lOPVKrhHtXXRZV_R-45" target="f9g9lOPVKrhHtXXRZV_R-29">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-45" target="f9g9lOPVKrhHtXXRZV_R-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-16" value="&lt;h2 style=&quot;&quot; aria-describedby=&quot;5fe773d4-45f9-46e4-b1f6-c0abf1fcc032&quot; id=&quot;5fe773d4-45f9-46e4-b1f6-c0abf1fcc033&quot; class=&quot;fxs-blade-title-titleText msportalfx-tooltip-overflow&quot;&gt;&lt;font style=&quot;font-weight: normal; font-size: 12px;&quot;&gt;Container Apps&lt;/font&gt;&lt;/h2&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Worker_Container_App.svg;" vertex="1" parent="1">
+        <mxCell id="OFh2dm37TtnyYa_PrCfK-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="MvGjC8aVfzUmuZ-at9Ks-16" target="OFh2dm37TtnyYa_PrCfK-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-16" value="&lt;h2 style=&quot;&quot; aria-describedby=&quot;5fe773d4-45f9-46e4-b1f6-c0abf1fcc032&quot; id=&quot;5fe773d4-45f9-46e4-b1f6-c0abf1fcc033&quot; class=&quot;fxs-blade-title-titleText msportalfx-tooltip-overflow&quot;&gt;&lt;font style=&quot;font-weight: normal; font-size: 12px;&quot;&gt;Container Apps&lt;/font&gt;&lt;/h2&gt;" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/other/Worker_Container_App.svg;" parent="1" vertex="1">
           <mxGeometry x="702" y="501" width="68" height="66" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.502;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="f9g9lOPVKrhHtXXRZV_R-25" target="MvGjC8aVfzUmuZ-at9Ks-16">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.008;entryY=0.502;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="f9g9lOPVKrhHtXXRZV_R-25" target="MvGjC8aVfzUmuZ-at9Ks-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-25" value="Call API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="MvGjC8aVfzUmuZ-at9Ks-24">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-25" value="Call API" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="MvGjC8aVfzUmuZ-at9Ks-24" vertex="1" connectable="0">
           <mxGeometry x="-0.3478" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-30" value="SWA API dummy project" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/nuvola2/48x48/actions/project_open.png" vertex="1" parent="1">
+        <mxCell id="MvGjC8aVfzUmuZ-at9Ks-30" value="SWA API dummy project" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/nuvola2/48x48/actions/project_open.png" parent="1" vertex="1">
           <mxGeometry x="455" y="-60" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OFh2dm37TtnyYa_PrCfK-1" value="Azure SQL" style="image;aspect=fixed;html=1;points=[];align=center;fontSize=12;image=img/lib/azure2/databases/SQL_Database.svg;" vertex="1" parent="1">
+          <mxGeometry x="712" y="655.75" width="48" height="64" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
