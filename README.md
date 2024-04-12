@@ -53,6 +53,7 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 - Azure Container Apps offer to much, for this scenario needs, and on the other hand Azure Container Instances don't have everything needed.
 - Maybe even better would be App Service.
 - [Many deployment options of image.](https://learn.microsoft.com/en-us/azure/container-apps/code-to-cloud-options)
+- Application Insights seems working when running from container.
 
 
 ### From Dockerfile to Azure Container Apps - some not obvious settings
