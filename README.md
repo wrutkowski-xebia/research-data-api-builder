@@ -54,6 +54,11 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 - [Many deployment options of image.](https://learn.microsoft.com/en-us/azure/container-apps/code-to-cloud-options)
 
 
+### From Dockerfile to Azure Container Apps - some not obvious settings
+- Deploy GitHub Action: `appSourcePath: ${{ github.workspace }}` as absolute path, `dockerfilePath`, `buildArguments` as relative paths
+- Azure Container Apps: Ingress: Target port 5000
+- Connection string settings/format issues, this was tested and works: `Data Source=server,1433;Initial Catalog=db;User ID=user;Password=password`
+
 ### Secrets with Visual Studio 2022 + Containers + Azure Cloud
 
 |[type](https://docs.docker.com/compose/compose-file/09-secrets/)| VS | Docker | Azure Container Apps |
