@@ -57,7 +57,7 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 ### From Dockerfile to Azure Container Apps - some not obvious settings
 - Deploy GitHub Action: `appSourcePath: ${{ github.workspace }}` as absolute path, `dockerfilePath`, `buildArguments` as relative paths
 - Azure Container Apps: Ingress: Target port 5000
-- Connection string settings/format issues, this was tested and works: `Data Source=server,1433;Initial Catalog=db;User ID=user;Password=password`
+- Connection string settings/format issues, this was tested and works: `Data Source=server,1433;Initial Catalog=db;User ID=user;Password=password` also can try to generate one from "Service Connector" (auto crate new entry in secrets)
 
 ### Secrets with Visual Studio 2022 + Containers + Azure Cloud
 
