@@ -44,6 +44,7 @@ Option to run it by Docker with custom port:
 Deploying also with API, allows to turn on Insights setting on Azure, but that don't make Insights to log calls from DAB. Even if that setting is OFF, calls from localhost are logged.
 - ["Cold Start" problems, giving 400 error on few first requests](https://github.com/Azure/data-api-builder/issues/918)
 - Docker Hub image Verified?
+- [Random timeouts?](https://github.com/Azure/data-api-builder/issues/2162)
  
 ### More about using containers for DAB
 - **No one way do do it right.**
