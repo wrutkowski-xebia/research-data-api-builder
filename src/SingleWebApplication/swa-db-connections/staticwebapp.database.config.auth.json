@@ -1,0 +1,53 @@
+{
+  "$schema": "https://github.com/Azure/data-api-builder/releases/download/v0.10.21/dab.draft.schema.json",
+  "data-source": {
+    "database-type": "mssql",
+    "connection-string": "@env('DATABASE_CONNECTION_STRING')",
+    "options": {
+      "set-session-context": false
+    }
+  },
+  "runtime": {
+    "rest": {
+      "enabled": true,
+      "path": "/rest",
+      "request-body-strict": true
+    },
+    "graphql": {
+      "enabled": true,
+      "path": "/graphql",
+      "allow-introspection": true
+    },
+    "host": {
+      "cors": {
+        "origins": [ "*" ],
+        "allow-credentials": false
+      },
+      "authentication": {
+        "provider": "AzureAD",
+        "jwt": {
+          "audience": "de4b5da5-3135-4948-aa02-342ac1d8e8fc",
+          "issuer": "https://login.microsoftonline.com/b3e5a293-6975-4239-9637-c963e8d90b7a/v2.0"
+        }
+      },
+      "mode": "development"
+    },
+    "telemetry": {
+      "application-insights": {
+        "enabled": true,
+        "connection-string": "InstrumentationKey=884e5459-cfa3-496c-8881-ed96885d24e9;IngestionEndpoint=https://polandcentral-0.in.applicationinsights.azure.com/;LiveEndpoint=https://polandcentral.livediagnostics.monitor.azure.com/"
+      }
+    }
+  },
+  "entities": {
+    "Customer": {
+      "source": "SalesLT.Customer",
+      "permissions": [
+        {
+          "actions": [ "*" ],
+          "role": "anonymous"
+        }
+      ]
+    }
+  }
+}
