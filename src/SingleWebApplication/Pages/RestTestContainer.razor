@@ -1,0 +1,22 @@
+﻿@page "/resttestcontainer"
+
+@using global::SingleWebApplication.Code.HttpClients
+@inject HttpDataApiBuilderContainerClient HttpDataApiBuilderContainerClient
+
+<PageTitle>Rest Test Container</PageTitle>
+
+<h3>Rest Test Container</h3>
+
+<textarea style="width:100%;min-height:500px"> 
+    @response
+</textarea>
+
+@code {
+    private string response = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        response = await HttpDataApiBuilderContainerClient.GetCustomersAsync();
+    }    
+
+}
