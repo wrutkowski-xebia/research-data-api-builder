@@ -1,4 +1,6 @@
-﻿namespace SingleWebApplication.Code.HttpClients
+﻿using Microsoft.AspNetCore.Components.WebAssembly.Authentication;
+
+namespace SingleWebApplication.Code.HttpClients
 {
     public static class HttpClientServicesExtension
     {
@@ -15,6 +17,11 @@
                 client.BaseAddress = new Uri(configuration["HttpClients:HttpDataApiBuilderContainerClient"] ?? _missingUrlConfig))
                 .AddSettings();
 
+            services.AddHttpClient<HttpDataApiBuilderAuthClient>(client =>
+                client.BaseAddress = new Uri(configuration["HttpClients:HttpDataApiBuilderClient"] ?? _missingUrlConfig))
+                .AddSettings()
+                .AddToken();
+
             return services;
         }
 
@@ -24,6 +31,17 @@
             {
                 configureClient.Timeout = TimeSpan.FromSeconds(_timeout);
             });
+
+            return httpClientBuilder;
+        }
+
+        private static IHttpClientBuilder AddToken(this IHttpClientBuilder httpClientBuilder)
+        {
+            httpClientBuilder
+             .AddHttpMessageHandler(sp => sp.GetRequiredService<AuthorizationMessageHandler>()
+             .ConfigureHandler(
+                         authorizedUrls: new[] { "https://research-data-api-builder-dab.lemonocean-d4632e7c.westeurope.azurecontainerapps.io", " http://localhost" },
+                         scopes: new[] { "api://de4b5da5-3135-4948-aa02-342ac1d8e8fc/Endpoint.Access" }));
 
             return httpClientBuilder;
         }

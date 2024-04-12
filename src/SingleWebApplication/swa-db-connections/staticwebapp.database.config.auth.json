@@ -48,6 +48,17 @@
           "role": "anonymous"
         }
       ]
+    },
+    "Product": {
+      "source": "SalesLT.Product",
+      "permissions": [
+        {
+          "actions": [ "*" ],
+          "role": "Sample.Role"
+        }
+      ]
     }
   }
 }
+
+

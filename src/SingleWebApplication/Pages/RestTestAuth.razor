@@ -1,0 +1,29 @@
+﻿@page "/resttestauth"
+
+@using global::SingleWebApplication.Code.HttpClients
+@inject HttpDataApiBuilderClient HttpDataApiBuilderClient
+@inject HttpDataApiBuilderAuthClient HttpDataApiBuilderAuthClient
+
+<PageTitle>Rest Test</PageTitle>
+
+<h3>Rest Test</h3>
+
+<textarea style="width:100%;min-height:500px"> 
+    @responseProduct
+</textarea>
+
+<textarea style="width:100%;min-height:500px"> 
+    @responseProductAuth
+</textarea>
+
+@code {
+    private string responseProduct = string.Empty;
+    private string responseProductAuth = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        responseProductAuth = await HttpDataApiBuilderAuthClient.GetProductsAsync();
+        
+    }    
+
+}

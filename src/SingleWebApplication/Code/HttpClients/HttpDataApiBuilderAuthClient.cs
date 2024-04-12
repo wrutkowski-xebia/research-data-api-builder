@@ -1,6 +1,6 @@
 ﻿namespace SingleWebApplication.Code.HttpClients
 {
-    public class HttpDataApiBuilderContainerClient(HttpClient httpClient)
+    public class HttpDataApiBuilderAuthClient(HttpClient httpClient)
     {
         public async Task<string> GetCustomersAsync()
         {
