@@ -24,7 +24,11 @@
         "allow-credentials": false
       },
       "authentication": {
-        "provider": "StaticWebApps"
+        "provider": "AzureAD",
+        "jwt": {
+          "audience": "de4b5da5-3135-4948-aa02-342ac1d8e8fc",
+          "issuer": "https://login.microsoftonline.com/b3e5a293-6975-4239-9637-c963e8d90b7a/v2.0"
+        }
       },
       "mode": "development"
     },
@@ -44,6 +48,17 @@
           "role": "anonymous"
         }
       ]
+    },
+    "Product": {
+      "source": "SalesLT.Product",
+      "permissions": [
+        {
+          "actions": [ "*" ],
+          "role": "Sample.Role"
+        }
+      ]
     }
   }
 }
+
+
