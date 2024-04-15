@@ -13,7 +13,6 @@ builder.Services.AddMsalAuthentication(options =>
 {    
     options.ProviderOptions.LoginMode = "redirect";
     builder.Configuration.Bind("AzureAd", options.ProviderOptions.Authentication);
-    options.UserOptions.RoleClaim = "Sample.Role";
 });
 
 builder.Services.AddHttpClients(builder.Configuration);

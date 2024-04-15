@@ -45,7 +45,7 @@ namespace SingleWebApplication.Code.HttpClients
             httpClientBuilder
              .AddHttpMessageHandler(sp => sp.GetRequiredService<AuthorizationMessageHandler>()
              .ConfigureHandler(
-                         authorizedUrls: new[] { "https://research-data-api-builder-dab.lemonocean-d4632e7c.westeurope.azurecontainerapps.io", " http://localhost" },
+                         authorizedUrls: new[] { "https://research-data-api-builder-dab.lemonocean-d4632e7c.westeurope.azurecontainerapps.io", " http://localhost:5033" },
                          scopes: new[] { "api://de4b5da5-3135-4948-aa02-342ac1d8e8fc/Endpoint.Access" }));
 
             return httpClientBuilder;
