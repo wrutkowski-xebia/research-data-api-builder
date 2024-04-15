@@ -2,21 +2,30 @@
 
 @using global::SingleWebApplication.Code.HttpClients
 @inject HttpDataApiBuilderContainerClient HttpDataApiBuilderContainerClient
+@inject HttpDataApiBuilderContainerAuthClient HttpDataApiBuilderContainerAuthClient
 
 <PageTitle>Rest Test Container</PageTitle>
 
-<h3>Rest Test Container</h3>
+<h3>Rest Test Container - Customer</h3>
 
 <textarea style="width:100%;min-height:500px"> 
     @response
 </textarea>
 
+<h3>Rest Test Container - Product (Auth)</h3>
+
+<textarea style="width:100%;min-height:500px"> 
+    @responseAuth
+</textarea>
+
 @code {
     private string response = string.Empty;
+    private string responseAuth = string.Empty;
 
     protected override async Task OnInitializedAsync()
     {
         response = await HttpDataApiBuilderContainerClient.GetCustomersAsync();
+        responseAuth = await HttpDataApiBuilderContainerClient.GetProductsAsync();
     }    
 
 }

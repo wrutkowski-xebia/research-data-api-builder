@@ -22,6 +22,11 @@ namespace SingleWebApplication.Code.HttpClients
                 .AddSettings()
                 .AddToken();
 
+            services.AddHttpClient<HttpDataApiBuilderContainerAuthClient>(client =>
+                client.BaseAddress = new Uri(configuration["HttpClients:HttpDataApiBuilderContainerClient"] ?? _missingUrlConfig))
+                .AddSettings()
+                .AddToken();
+
             return services;
         }
 
