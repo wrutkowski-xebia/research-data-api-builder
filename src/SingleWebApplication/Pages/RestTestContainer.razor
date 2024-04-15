@@ -8,13 +8,13 @@
 
 <h3>Rest Test Container - Customer</h3>
 
-<textarea style="width:100%;min-height:500px"> 
+<textarea style="width:100%;min-height:250px"> 
     @response
 </textarea>
 
 <h3>Rest Test Container - Product (Auth)</h3>
 
-<textarea style="width:100%;min-height:500px"> 
+<textarea style="width:100%;min-height:250px"> 
     @responseAuth
 </textarea>
 
@@ -25,7 +25,7 @@
     protected override async Task OnInitializedAsync()
     {
         response = await HttpDataApiBuilderContainerClient.GetCustomersAsync();
-        responseAuth = await HttpDataApiBuilderContainerClient.GetProductsAsync();
+        responseAuth = await HttpDataApiBuilderContainerAuthClient.GetProductsAsync();
     }    
 
 }
