@@ -72,4 +72,9 @@ Deploying also with API, allows to turn on Insights setting on Azure, but that d
 Data API Builder uses `@env("env_name")` in configuration files and ex. connection string seems to be stored as environment variable. Where in Azure there seems no problem to store it as a secret, there could be issue on local development, because Docker needs swarm mode and VS out of the box support only Docker Compose. For local dev seems storing connection string in local env seems not best but solution. 
 Seems in Azure build-in solution is working like equivalent for `/run/secrets/<name>` in pure docker.
 
+### Authentication, Authorization (JWT)
+- "Default" Azure App registration + Enterprise Application configuration for SWA + API
+- Adding to request: JWT token, header X-MS-API-ROLE=role (seems token alone is not working)
+
+
 [^1]: Local setup: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04)
