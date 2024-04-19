@@ -16,7 +16,7 @@ services:
       context: .
       dockerfile: ./SingleWebApplication.DataAPIBuilder/Dockerfile
       args:
-        - DAB_CONFIG=/SingleWebApplication/swa-db-connections/staticwebapp.database.config.json
+        - DAB_CONFIG=/SingleWebApplication/swa-db-connections-container/staticwebapp.database.config.json
     environment:
       - DATABASE_CONNECTION_STRING= /run/secrets/database_connection_string
       #- DATABASE_CONNECTION_STRING=${DATABASE_CONNECTION_STRING}
