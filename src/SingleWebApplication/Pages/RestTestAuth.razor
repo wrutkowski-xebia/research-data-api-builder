@@ -1,7 +1,6 @@
 ﻿@page "/resttestauth"
 
 @using global::SingleWebApplication.Code.HttpClients
-@inject HttpDataApiBuilderClient HttpDataApiBuilderClient
 @inject HttpDataApiBuilderAuthClient HttpDataApiBuilderAuthClient
 
 <PageTitle>Rest Test</PageTitle>
@@ -13,12 +12,12 @@
 </textarea>
 
 @code {
-    private string responseProduct = string.Empty;
+    
     private string responseProductAuth = string.Empty;
 
     protected override async Task OnInitializedAsync()
     {
-        responseProductAuth = await HttpDataApiBuilderAuthClient.GetProductsAsync();
+        responseProductAuth = await HttpDataApiBuilderAuthClient.GetProductsAsync();        
         
     }    
 

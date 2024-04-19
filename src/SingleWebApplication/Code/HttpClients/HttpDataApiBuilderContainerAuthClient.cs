@@ -1,23 +1,23 @@
-﻿namespace SingleWebApplication.Code.HttpClients
+﻿using SingleWebApplication.Code.Authentication;
+
+namespace SingleWebApplication.Code.HttpClients
 {
-    public class HttpDataApiBuilderContainerAuthClient(HttpClient httpClient)
+    public class HttpDataApiBuilderContainerAuthClient
     {
+        private readonly HttpClient _httpClient;
+        public HttpDataApiBuilderContainerAuthClient(HttpClient httpClient, UserDabRoleHeader userDabRoleHeader)
+        {
+            _httpClient = httpClient;
+            userDabRoleHeader.SetHeader(_httpClient);
+        }
+
         public async Task<string> GetCustomersAsync()
         {
-            return await httpClient.GetStringAsync("Customer");
+            return await _httpClient.GetStringAsync("Customer");
         }
         public async Task<string> GetProductsAsync()
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, "Product");
-
-            request.Headers.Add("X-MS-API-ROLE", "Sample.Role");
-            //request.Headers.Add("X-MS-API-ROLE", "authenticated");
-
-
-            var response = await httpClient.SendAsync(request);
-            return await response.Content.ReadAsStringAsync();
-
-            //return await httpClient.GetStringAsync("Product");
+            return await _httpClient.GetStringAsync("Product");
         }
     }
 }

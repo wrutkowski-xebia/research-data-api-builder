@@ -1,0 +1,31 @@
+﻿@page "/usertest"
+@using SingleWebApplication.Code.Authentication
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<div>
+  <p>
+    @user
+  </p>
+  <p>
+    @role
+  </p>
+</div>
+
+
+@code {
+    private string user = string.Empty;
+    private string role = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var authState = await AuthenticationStateProvider
+             .GetAuthenticationStateAsync();
+        var loggedUser = authState.User;
+
+        user = loggedUser.Identity?.Name ?? string.Empty;
+        role = loggedUser.FindFirst(AuthConst.RoleClaim)?.Value ?? string.Empty;
+
+    }    
+
+}

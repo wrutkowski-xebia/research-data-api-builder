@@ -86,4 +86,4 @@ Seems in Azure build-in solution is working like equivalent for `/run/secrets/<n
 - Adding to request: JWT token, header X-MS-API-ROLE=role (seems token alone is not working)
 
 
-[^1]: Local setup: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04)
+[^1]: Local setup: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04), .Net 8.0

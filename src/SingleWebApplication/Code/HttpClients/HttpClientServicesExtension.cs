@@ -6,6 +6,7 @@ namespace SingleWebApplication.Code.HttpClients
     {
         private static readonly int _timeout = 25;
         private static readonly string _missingUrlConfig = "missingUrlConfig";
+
         public static IServiceCollection AddHttpClients(this IServiceCollection services, IConfiguration configuration)
         {
 
@@ -45,8 +46,14 @@ namespace SingleWebApplication.Code.HttpClients
             httpClientBuilder
              .AddHttpMessageHandler(sp => sp.GetRequiredService<AuthorizationMessageHandler>()
              .ConfigureHandler(
-                         authorizedUrls: new[] { "https://research-data-api-builder-dab.lemonocean-d4632e7c.westeurope.azurecontainerapps.io", " http://localhost:5033", "https://lemon-bay-054e84803.5.azurestaticapps.net" },
-                         scopes: new[] { "api://de4b5da5-3135-4948-aa02-342ac1d8e8fc/Endpoint.Access" }));
+                         authorizedUrls: new[]
+                         {
+                             "https://research-data-api-builder-dab.lemonocean-d4632e7c.westeurope.azurecontainerapps.io",
+                             "https://lemon-bay-054e84803.5.azurestaticapps.net",
+                             " http://localhost:5033"
+                         },
+                         scopes: new[] { "api://de4b5da5-3135-4948-aa02-342ac1d8e8fc/Endpoint.Access" }
+                ));
 
             return httpClientBuilder;
         }
