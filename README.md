@@ -85,5 +85,12 @@ Seems in Azure build-in solution is working like equivalent for `/run/secrets/<n
 - "Default" Azure App registration + Enterprise Application configuration for SWA + API
 - Adding to request: JWT token, header X-MS-API-ROLE=role (seems token alone is not working)
 
+### Local DEV
+- VS don't support Swarm mode out of the box. This mode, would be nice here, mostly for using Secrets feature, not because of complexity of application etc.
+- [Visual Studio 2022 Docke - MS Docs](https://learn.microsoft.com/en-us/visualstudio/containers/?view=vs-2022)
+- Adding Docker to Blazor isn't supported thru project create wizard. It's need to be added later similar like for [React one](https://learn.microsoft.com/en-us/visualstudio/containers/container-tools-react?view=vs-2022).
+- `Dockerfile` and `docker-compose` needs to customized as in this repo.
+- Environment variable needs to be added: `DATABASE_CONNECTION_STRING`
+
 
 [^1]: Local setup: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04), .Net 8.0
