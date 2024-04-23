@@ -5,11 +5,16 @@ version: '3.8'
 name: dabtest
 
 services: 
-  singlewebapplication.api:
-    image: ${DOCKER_REGISTRY-}singlewebapplicationapi
-    build:
-      context: .
-      dockerfile: ./SingleWebApplication.API/Dockerfile
+  singlewebapplication:
+    image: swacli/static-web-apps-cli:1.1.7
+    ports:
+      - 4280:4280
+    volumes:
+      - ./SingleWebApplication:/app/SingleWebApplication
+    working_dir: /app/SingleWebApplication
+    command: swa start http://localhost:5000 --run "dotnet watch run"
+    depends_on:
+      - singlewebapplication.dataapibuilder
   singlewebapplication.dataapibuilder:
     image: ${DOCKER_REGISTRY-}singlewebapplicationdataapibuilder
     build: 
@@ -18,28 +23,11 @@ services:
       args:
         - DAB_CONFIG=/SingleWebApplication/swa-db-connections-container/staticwebapp.database.config.json
     environment:
-      - DATABASE_CONNECTION_STRING= /run/secrets/database_connection_string
-      #- DATABASE_CONNECTION_STRING=${DATABASE_CONNECTION_STRING}
-    secrets:
-      - database_connection_string   
+      - DATABASE_CONNECTION_STRING=${DATABASE_CONNECTION_STRING}
     ports:
       - 5033:5000
-  singlewebapplication:
-    image: ${DOCKER_REGISTRY-}singlewebapplication
+  singlewebapplication.api:
+    image: ${DOCKER_REGISTRY-}singlewebapplicationapi
     build:
       context: .
-      dockerfile: ./SingleWebApplication/Dockerfile 
-
-secrets: 
-  database_connection_string:          
-    environment: "DATABASE_CONNECTION_STRING"
-    
-
-    
-    
-        
-
-
-  
-    
-  
+      dockerfile: ./SingleWebApplication.API/Dockerfile
