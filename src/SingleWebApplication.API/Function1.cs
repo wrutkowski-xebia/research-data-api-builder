@@ -14,7 +14,7 @@ namespace SingleWebApplication.API
         }
 
         [Function(nameof(Function1))]
-        public void Run([HttpTrigger(AuthorizationLevel.Anonymous)] HttpRequest req)
+        public void Run([HttpTrigger(AuthorizationLevel.Anonymous, "get")] HttpRequest req)
         {
             _logger.LogInformation(nameof(Function1));
         }

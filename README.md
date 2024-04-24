@@ -97,6 +97,6 @@ Seems in Azure build-in solution is working like equivalent for `/run/secrets/<n
 ### Local Dev Concept Problems
 Seems making VS Docker Compose "hit F5 and debug/run" it's not so easy to make local dev easier, even its brings more challenges. 
 - SWA as container: [Access to the path '/home/vscode/.local/share/NuGet/Migrations' is denied.](https://github.com/Azure/static-web-apps-cli/discussions/824)
-- Running default Azure Functions project template, not sure why but debugging was not hitting breakpoints. Seems that will be hard to obtain for SWA concept.
+
 
 [^1]: Local setup: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04), .Net 8.0
