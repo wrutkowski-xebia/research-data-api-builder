@@ -85,7 +85,7 @@ Seems in Azure build-in solution is working like equivalent for `/run/secrets/<n
 - "Default" Azure App registration + Enterprise Application configuration for SWA + API
 - Adding to request: JWT token, header X-MS-API-ROLE=role (seems token alone is not working)
 
-### Local DEV Concept
+### Local DEV Concept: Blazor WASM + SWA CLI Docker
 - VS don't support Swarm mode out of the box. This mode, would be nice here, mostly for using Secrets feature, not because of complexity of application etc.
 - [Visual Studio 2022 Docker - MS Docs](https://learn.microsoft.com/en-us/visualstudio/containers/?view=vs-2022)
 - Adding Docker to Blazor isn't supported thru project create wizard. It's need to be added later similar like for [React one](https://learn.microsoft.com/en-us/visualstudio/containers/container-tools-react?view=vs-2022).
@@ -93,10 +93,17 @@ Seems in Azure build-in solution is working like equivalent for `/run/secrets/<n
 - Environment variable needs to be added: `DATABASE_CONNECTION_STRING`
 - If DB is hosted on Azure check firewall settings.
 
+### Local Dev Concept Problems: Blazor WASM + SWA CLI Docker
+Seems making VS Docker Compose "hit F5 and debug/run" it's not so easy to make local dev easier, even its brings more challenges. There are some VS Docker Tools and SWA CLI issues around debugging and even executing app in container.
 
-### Local Dev Concept Problems
-Seems making VS Docker Compose "hit F5 and debug/run" it's not so easy to make local dev easier, even its brings more challenges. 
 - SWA as container: [Access to the path '/home/vscode/.local/share/NuGet/Migrations' is denied.](https://github.com/Azure/static-web-apps-cli/discussions/824)
+- [Access workaround?](https://github.com/microsoft/DockerTools/issues/399)
+- Blazor Specific
+  - [#37565](https://github.com/dotnet/aspnetcore/issues/37565)
+  - [#49795](https://github.com/dotnet/aspnetcore/issues/49795)
+  - [#27766](https://github.com/dotnet/aspnetcore/issues/27766)
+- ~100 open VS Docker Tools [issues](https://github.com/microsoft/dockertools/issues), also last commit was about 10 months ago.
+- ~100 open SWA CLI [issues](https://github.com/Azure/static-web-apps-cli/issues), last commit one month ago.
+- .Net 8.0 for Blazor Wasm in SWA CLI Docker image [not supported now](https://github.com/Azure/static-web-apps-cli/discussions/825)
 
-
-[^1]: Local setup: Windows 10, Visual Studio 2022, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04), .Net 8.0
+[^1]: Local setup: Windows 10, Visual Studio 2022 17.9.6, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04), .Net 8.0

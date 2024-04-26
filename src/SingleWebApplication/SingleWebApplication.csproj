@@ -6,8 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>7c1671b3-fcc3-48cc-9c3d-b9c6139e5e0b</UserSecretsId>
     <DockerFastModeProjectMountDirectory>/home/site/wwwroot</DockerFastModeProjectMountDirectory>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <EnableSdkContainerDebugging>True</EnableSdkContainerDebugging>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>    
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,6 +20,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\.dockerignore" Link=".dockerignore">
+      <DependentUpon>$(DockerDefaultDockerfile)</DependentUpon>
+    </None>
     <None Include="Properties\serviceDependencies.json">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
@@ -38,7 +40,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="8.0.3" PrivateAssets="all" />
     <PackageReference Include="Microsoft.Authentication.WebAssembly.Msal" Version="8.0.3" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.20.1" />
   </ItemGroup>
 
   <ItemGroup>

@@ -9,6 +9,7 @@
   <PropertyGroup>
     <DockerServiceName>singlewebapplication</DockerServiceName>
     <DockerServiceUrl>{Scheme}://{ServiceHost}:{ServicePort}</DockerServiceUrl>
+    <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">
@@ -16,5 +17,7 @@
     </None>
     <None Include="docker-compose.yml" />
     <None Include=".dockerignore" />
+    <None Include="TestedDockerConfigurations\SWACLIDockerImage\docker-compose.vs.debug.yml.swacli" />
+    <None Include="TestedDockerConfigurations\SWACLIDockerImage\docker-compose.yml.swacli" />
   </ItemGroup>
 </Project>

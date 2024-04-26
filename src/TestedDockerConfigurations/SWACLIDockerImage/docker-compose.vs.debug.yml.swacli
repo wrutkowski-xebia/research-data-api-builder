@@ -1,0 +1,3 @@
+services: 
+  singlewebapplication:
+    entrypoint: swa start http://localhost:5000 --run "dotnet watch run" && tail -f /dev/null

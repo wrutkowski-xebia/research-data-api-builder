@@ -8,6 +8,9 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingleWebApplication.API", "SingleWebApplication.API\SingleWebApplication.API.csproj", "{0C7FB9F3-4261-4730-8238-3F0BFA0A91D3}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{16C8B917-69BA-4834-AEAF-805A31652A83}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9945D0E6-BEBF-4250-9C5C-DDE59A3DD1C9} = {9945D0E6-BEBF-4250-9C5C-DDE59A3DD1C9}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SingleWebApplication.DataAPIBuilder", "SingleWebApplication.DataAPIBuilder", "{3727735F-E36B-4354-A899-FF67B4A4AE8C}"
 	ProjectSection(SolutionItems) = preProject

@@ -31,15 +31,15 @@
     "Container (Dockerfile)": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "http://localhost:5274",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
+      "applicationUrl": "http://localhost:5274",
+      "publishAllPorts": false,      
+      "httpPort": 5274,
+      "useSSL": false,
       "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development",
-        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy",
-        "ASPNETCORE_HTTPS_PORTS": "8081",
-        "ASPNETCORE_HTTP_PORTS": "8080"
-      },
-      "publishAllPorts": false,
-      "useSSL": true
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   },
   "$schema": "http://json.schemastore.org/launchsettings.json",

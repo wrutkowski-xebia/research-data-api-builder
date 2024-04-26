@@ -1,0 +1,35 @@
+#Sections for docker-compose.yml
+
+#This configuration worked:
+#Also docker-compose.vs.debug.yml.swacli is needed to auto start SWA. 
+#CMD and ENTRYPOINT wasn't starting SWA, only executing it from ENTRYPOINT in docker-compose.vs.debug.yml.swacli
+#VS Docker Compose specific - https://learn.microsoft.com/en-us/visualstudio/containers/docker-compose-properties?view=vs-2022#customize-the-app-startup-process
+services: 
+  singlewebapplication:
+    image: ${DOCKER_REGISTRY-}singlewebapplication
+    build: 
+      context: .
+      dockerfile: ./SingleWebApplication/Dockerfile
+    ports:
+      - 4280:4280
+      - 5274:5000
+    environment:
+      - MS_VS_CONTAINERS_TOOLS_LOGGING_ENABLED=true
+      - MS_VS_DOCKER_TOOLS_LOGGING_ENABLED=true
+      - PYTHONUNBUFFERED=1 
+      - SWA_CLI_DEBUG=silly
+      - DEBUG=true      
+    depends_on:
+      - singlewebapplication.dataapibuilder
+
+#This gives error: Access to the path '/home/vscode/.local/share/NuGet/Migrations' is denied.
+services: 
+  singlewebapplication:
+    image: swacli/static-web-apps-cli:1.1.7
+    ports:
+      - 4280:4280
+    volumes:
+      - ./SingleWebApplication:/app/SingleWebApplication
+    working_dir: /app/SingleWebApplication
+    command: swa start http://localhost:5000 --run "dotnet watch run"
+
