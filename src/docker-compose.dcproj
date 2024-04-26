@@ -19,5 +19,7 @@
     <None Include=".dockerignore" />
     <None Include="TestedDockerConfigurations\SWACLIDockerImage\docker-compose.vs.debug.yml.swacli" />
     <None Include="TestedDockerConfigurations\SWACLIDockerImage\docker-compose.yml.swacli" />
+    <None Include="TestedDockerConfigurations\SWACLIDockerImage\Dockerfile.swacli" />
+    <None Include="TestedDockerConfigurations\SWACLIDockerImage\run_swa_docker_dab_docker.bat" />
   </ItemGroup>
 </Project>
