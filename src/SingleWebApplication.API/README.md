@@ -1,0 +1,1 @@
+This mostly is DUMMY project just to enable Application Insights switch in Azure SWA.
