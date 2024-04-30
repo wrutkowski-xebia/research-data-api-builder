@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "SingleWebApplication.DAB.LocalRun": {
+      "commandName": "Project",
+      "workingDirectory": "$(MSBuildStartupDirectory)\\SingleWebApplication"
+    }
+  }
+}
