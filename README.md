@@ -85,6 +85,17 @@ Seems in Azure build-in solution is working like equivalent for `/run/secrets/<n
 - "Default" Azure App registration + Enterprise Application configuration for SWA + API
 - Adding to request: JWT token, header X-MS-API-ROLE=role (seems token alone is not working)
 
+---
+### Local DEV: General Problems
+- Port 5000 for DAB can't be changed.
+- Blazor WASM can't be debug with containers? 
+  - [#37565](https://github.com/dotnet/aspnetcore/issues/37565)
+  - "Unsupported scenarios: Debug in non-local scenarios" [MS Docs](https://learn.microsoft.com/en-us/aspnet/core/blazor/debug?view=aspnetcore-8.0&tabs=visual-studio)
+
+
+
+---
+
 ### Local DEV Concept: Blazor WASM + SWA CLI Docker
 - VS don't support Swarm mode out of the box. This mode, would be nice here, mostly for using Secrets feature, not because of complexity of application etc.
 - [Visual Studio 2022 Docker - MS Docs](https://learn.microsoft.com/en-us/visualstudio/containers/?view=vs-2022)
@@ -106,4 +117,15 @@ Seems making VS Docker Compose "hit F5 and debug/run" it's not so easy to make l
 - ~100 open SWA CLI [issues](https://github.com/Azure/static-web-apps-cli/issues), last commit one month ago.
 - .Net 8.0 for Blazor Wasm in SWA CLI Docker image [not supported now](https://github.com/Azure/static-web-apps-cli/discussions/825)
 
+---
+
+### Local Dev Concept: Blazor WASM + custom Dockerfile
+Prepare specific Dockerfile with using ex. Microsoft ASP.Net Core docker images as a base for building, publishing and etc.
+
+### Local Dev Concept Problems: Blazor WASM + custom Dockerfile
+- [Debug](https://learn.microsoft.com/en-us/aspnet/core/blazor/debug?view=aspnetcore-8.0&tabs=visual-studio)
+- 
+
+
+ 
 [^1]: Local setup: Windows 10, Visual Studio 2022 17.9.6, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04), .Net 8.0
