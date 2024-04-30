@@ -124,8 +124,6 @@ Prepare specific Dockerfile with using ex. Microsoft ASP.Net Core docker images 
 
 ### Local Dev Concept Problems: Blazor WASM + custom Dockerfile
 - [Debug](https://learn.microsoft.com/en-us/aspnet/core/blazor/debug?view=aspnetcore-8.0&tabs=visual-studio)
-- 
-
 
  
 [^1]: Local setup: Windows 10, Visual Studio 2022 17.9.6, Docker Desktop 4.28.0, WSL, Ubuntu 20.04 (WSL) (there were some issues with 22.04), .Net 8.0
